@@ -10,7 +10,7 @@ video {
 }
 
 
-/*HEADER LOGO*/
+/*HEADER*/
 header {
   background-color: #43c5c3;
   padding: 20px;
@@ -19,7 +19,6 @@ header {
 
 
 /*NAVIGATION BAR*/
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -30,8 +29,9 @@ ul {
 
 li {
   float: left;
+}
   
-.active {
+li a:active {
   background-color: #007;
 }
 
@@ -52,13 +52,13 @@ li a:hover {
 }
 
 
-/* CONTAINER FOR FLEXBOXES */
+/*CONTAINER FLEXBOX*/
 section {
   display: -webkit-flex;
   display: flex;
 }
 
-/* NAV STYLE */
+/*NAV STYLE*/
 nav {
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -67,21 +67,25 @@ nav {
   padding: 20px;
 }
 
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-/* ARTICLE CONTENT */
+/*ARTICLE STYLE*/
 article {
   flex: 3;
   background-color: #ebf9f9;
   color: #165e79;
   padding: 20px;
- 
 }
 
 article p{
   color: black;
 }
 
-/* FOOTER */
+/*FOOTER*/
 footer {
   background-color: #165e79;
   padding: 20px;
@@ -89,7 +93,7 @@ footer {
   color: white;
 }
 
- /*RESPONSIVE*/
+/*RESPONSIVE*/
 @media (max-width: 600px) {
   section {
     -webkit-flex-direction: column;
