@@ -10,7 +10,7 @@ video {
 }
 
 
-/*HEADER*/
+/*HEADER LOGO*/
 header {
   background-color: #43c5c3;
   padding: 20px;
@@ -30,9 +30,8 @@ ul {
 
 li {
   float: left;
-}
   
-li a:active {
+.active {
   background-color: #007;
 }
 
@@ -53,13 +52,13 @@ li a:hover {
 }
 
 
-/* Container for flexboxes */
+/* CONTAINER FOR FLEXBOXES */
 section {
   display: -webkit-flex;
   display: flex;
 }
 
-/* Style the navigation menu */
+/* NAV STYLE */
 nav {
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -68,13 +67,8 @@ nav {
   padding: 20px;
 }
 
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
 
-/* Style the content */
+/* ARTICLE CONTENT */
 article {
   flex: 3;
   background-color: #ebf9f9;
@@ -87,7 +81,7 @@ article p{
   color: black;
 }
 
-/* Style the footer */
+/* FOOTER */
 footer {
   background-color: #165e79;
   padding: 20px;
@@ -95,8 +89,22 @@ footer {
   color: white;
 }
 
+ /*RESPONSIVE*/
 @media (max-width: 600px) {
   section {
     -webkit-flex-direction: column;
     flex-direction: column;
+    
+.nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+    }
+    .menu li{
+        float: left;
+    }
+    .menu a:hover{
   }
